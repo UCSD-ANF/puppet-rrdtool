@@ -5,7 +5,7 @@ class rrdtool::python (
 
   $manage_package_name = $::osfamily ? {
     'Solaris' => 'py_rrdtool',
-    default   => 'rrdtool-python',
+    default   => 'python-rrdtool',
   }
 
   $manage_package_ensure = $ensure

@@ -5,6 +5,7 @@ class rrdtool::perl (
 
   $manage_package_name = $::osfamily ? {
     'Solaris' => 'pm_rrdtool',
+    'Redhat'  => 'perl-rrdtool',
     default   => 'rrdtool-perl',
   }
 
