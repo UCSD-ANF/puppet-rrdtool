@@ -22,7 +22,7 @@ describe 'rrdtool::perl' do
     # Make sure the Solaris provider override doesn't leak
     it { should contain_package('rrdtool-perl').with({
       'provider' => /^((?!pkgutil).)*$/,
-      'name'     => 'rrdtool-perl',
+      'name'     => 'perl-rrdtool',
     }) }
   end
 
