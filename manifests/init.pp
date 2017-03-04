@@ -8,6 +8,7 @@ class rrdtool (
   $manage_package_ensure = $ensure
 
   $manage_package_provider = $::osfamily ? {
+    'Darwin'  => 'macports',
     'Solaris' => 'pkgutil',
     default   => undef,
   }

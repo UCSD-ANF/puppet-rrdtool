@@ -21,7 +21,7 @@ describe 'rrdtool::python' do
 
     # Make sure the Solaris provider override doesn't leak
     it { should contain_package('rrdtool-python').with({
-      'provider' => /^((?!pkgutil).)*$/,
+      'provider' => nil,
       'name'     => 'python-rrdtool',
     }) }
   end

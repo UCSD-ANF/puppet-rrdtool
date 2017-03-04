@@ -21,7 +21,7 @@ describe 'rrdtool::devel' do
 
     # Make sure the Solaris provider override doesn't leak
     it { should contain_package('rrdtool-devel').with({
-      'provider' => /^((?!pkgutil).)*$/,
+      'provider' => nil,
       'name'     => 'rrdtool-devel',
     }) }
   end

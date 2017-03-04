@@ -3,7 +3,7 @@ puppet-rrdtool
 
 Puppet module to manage RRDTool
 
-Version 0.1
+Version 0.1.2
 
 Usage:
 
